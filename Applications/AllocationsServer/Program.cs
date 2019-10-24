@@ -20,6 +20,7 @@ namespace AllocationsServer
                 // https://github.com/aspnet/KestrelHttpServer/issues/1998#issuecomment-322922164
                 // comment by nidhi
                 .UseConfiguration(new ConfigurationBuilder().AddCommandLine(args).Build())
+                .UseCloudFoundryHosting()
                 .AddCloudFoundry()
                 .UseStartup<Startup>();
     }
