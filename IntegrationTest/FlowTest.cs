@@ -57,7 +57,7 @@ namespace IntegrationTest
         {
             _allocationsServer.Start();
             _registrationServer.Start();
-           // _backlogServer.Start();
+            _backlogServer.Start();
             _timesheetsServer.Start();
 
             HttpResponseMessage response;
